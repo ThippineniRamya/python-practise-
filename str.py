@@ -346,3 +346,145 @@ for right in range(len(s)):
         left += 1
     max_len = max(max_len, right - left + 1)
 print(max_len)
+
+'''group of angrams'''
+# strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+# group={}
+# for word in strs:
+#     sort_word="".join(sorted(word))
+#     if sort_word not in group:
+#         group[sort_word]=[]
+#     group[sort_word].append(word)
+# print(list(group.values()))
+'''is subsequence392'''
+
+# def seq(s, t):
+#     i = 0
+#     j = 0
+#     while i < len(s) and j < len(t):
+#         if s[i] == t[j]:
+#             i += 1
+#         j += 1
+#     return i == len(s)
+# obj = seq("ace", "abcde")
+# print(obj)
+'''check is plaindrome two pointers '''
+# s="madam"
+# left=0
+# right=len(s)-1
+# is_palindrome=True
+# while left<right:
+#     if s[left]!=s[right]:
+#         is_palindrome=False
+#         break
+#     left+=1
+#     right-=1
+# print(is_palindrome)
+'''. Reverse String Using Two Pointers
+Input: abcdef
+Output: fedcba'''
+# s="abcef"
+# st=list(s)
+# n=len(st)
+# l=0
+# r=n-1
+# while l<r:
+#     st[l],st[r]=st[r],st[l]
+#     l+=1
+#     r-=1
+# print("".join(st))
+'''. First Character That Occurs Once
+Input: swiss
+Output: w'''
+# s="swiss"
+# freq={}
+# for i in s:
+#     if i not in freq:
+#         freq[i]=1
+#     else:
+#         freq[i]+=1
+# for key in freq:
+#     if freq[key]==1:
+#         print(key)
+#         break
+'''sum of digits in a string'''
+# s="abc123"
+# c=0
+# for i in s:
+#     if i.isdigit():
+#         c+=int(i)
+# print(c)
+'''Extract Numbers From String
+Input: abc12def34
+Output: 12 34'''
+# s="abc12def34"
+# num=""
+# for i in s:
+#     if i.isdigit():
+#         num+=i
+#     else:
+#         if num:
+#             print(num)
+#             num=""
+# if num:
+#     print(num)
+'''Sum All Numbers
+Input: abc12def45
+Output: 57'''
+# s="abc12def45"
+# num=""
+# total=0
+# for i in s:
+#     if i.isdigit():
+#         num+=i
+#     else:
+#         if num:
+            
+#             total+=int(num)
+#         num=""
+# if num:
+#     total+=int(num)
+# print(total)
+'''Find Largest Number in String
+Input: abc12def45xyz9
+Output: 45'''
+# s="abc12def45xyz9"
+# num=""
+# long=0
+# for i in s:
+#     if i.isdigit():
+#         num+=i
+#     else:
+#         if num:
+#             long=max(long,int(num))
+#         num=""
+# if num:
+#     long=max(long,int(num))
+# print(long)
+
+
+
+'''find the missing charecter'''
+# s="abcfghijklmnopqrstuvwxyz"
+# for i in "abcdefghijklmnopqrstuvwxyz":
+#     if i not in s:
+#         print(i) 
+'''Find Extra Character
+Input:
+String 1: abcde
+String 2: abxcde'''
+# s1="abcd"
+# s2="abcde"
+# for i in s2:
+#     if i not in s1:
+#         print(i)
+'''if two string are equla without using =='''
+# s="ramya"
+# s1="ramya"
+# if s is s1:
+#     print("true")
+# else:
+#     print("false")
+
+
+
